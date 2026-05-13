@@ -4,35 +4,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  font-family: Arial;
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  font-family: 'Segoe UI', sans-serif;
   color: white;
 }
 
 .container {
   text-align: center;
-  background: rgba(0,0,0,0.4);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
 }
 
 h1 {
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
 }
 
 #timer {
-  font-size: 60px;
+  font-size: 70px;
   margin: 20px 0;
   font-weight: bold;
+  text-shadow: 0 0 20px #00f7ff;
 }
 
 .buttons button {
   padding: 12px 25px;
   margin: 10px;
   border: none;
-  border-radius: 10px;
-  background: #00c6ff;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00f7ff, #0072ff);
   color: black;
   font-size: 16px;
   cursor: pointer;
@@ -40,12 +45,12 @@ h1 {
 }
 
 .buttons button:hover {
-  background: #0072ff;
-  color: white;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00f7ff;
 }
 
 #status {
   margin-top: 15px;
   font-size: 18px;
+  opacity: 0.8;
 }
